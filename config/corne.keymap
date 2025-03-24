@@ -37,10 +37,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q           &kp W                 &kp E          &kp R         &kp T      &kp Y    &kp U      &kp I      &kp O    &kp P     &kp ENTER
-&kp LCTRL  &kp A           &kp S                 &kp D          &kp F         &kp G      &kp H    &td_j      &td_k      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &mt LEFT_GUI Z  &mt K_CONTEXT_MENU X  &kp C          &kp V         &kp B      &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                                 &kp BACKSPACE  &kp LEFT_ALT  &kp RET    &kp RET  &kp SPACE  &kp RALT
+&kp TAB    &kp Q           &kp W                 &kp E          &kp R         &kp T      &kp Y   &kp U      &kp I      &kp O    &kp P     &kp ENTER
+&kp LCTRL  &kp A           &kp S                 &kp D          &kp F         &kp G      &kp H   &td_j      &td_k      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &mt LEFT_GUI Z  &mt K_CONTEXT_MENU X  &kp C          &kp V         &kp B      &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                                 &kp BACKSPACE  &kp LEFT_ALT  &kp RET    &tog 2  &kp SPACE  &tog 1
             >;
         };
 
@@ -56,7 +56,7 @@
 &trans  &trans   &kp BACKSPACE   &kp DELETE          &trans            &trans               &kp PLUS   &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans
 &trans  &kp ESC  &kp LEFT_SHIFT  &kp LCTRL           &kp F2            &bt BT_SEL 4         &kp F2     &kp LEFT     &kp DOWN      &kp RIGHT      &trans  &trans
 &trans  &trans   &kp LEFT_GUI    &kp K_CONTEXT_MENU  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp HOME     &kp ESC       &kp END        &trans  &trans
-                                 &trans              &kp LEFT_ALT      &kp SPACE            &to 0      &trans       &kp RALT
+                                 &trans              &kp LEFT_ALT      &kp SPACE            &trans     &trans       &trans
             >;
         };
 
@@ -69,17 +69,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB    &trans  &trans     &trans                &trans                 &trans       &mt BACKSLASH SLASH  &mt AMPERSAND N7          &mt ASTERISK N8       &mt LEFT_PARENTHESIS N0  &kp COMMA         &kp ENTER
+&kp LCTRL  &trans  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans       &kp MINUS            &mt DOLLAR NUMBER_4       &mt PERCENT N5        &mt CARET NUMBER_6       &mt COLON PERIOD  &kp GRAVE
+&kp LSHFT  &trans  &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &kp PLUS             &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3        &kp PIPE          &kp RIGHT_SHIFT
+                              &kp BACKSPACE         &kp SPACE              &kp SPACE    &trans               &mt RIGHT_PARENTHESIS N0  &trans
             >;
         };
-
-        extra_1 { status = "reserved"; };
-
-        extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
     };
 };
