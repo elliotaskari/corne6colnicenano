@@ -32,6 +32,16 @@
             bindings = <&mo 3>;
             key-positions = <19 20>;
         };
+
+        Nav {
+            bindings = <&to 1>;
+            key-positions = <16 15>;
+        };
+
+        Numpad {
+            bindings = <&to 2>;
+            key-positions = <16 14>;
+        };
     };
 
     keymap {
@@ -63,13 +73,13 @@
             display-name = "Lower";
             bindings = <
 &trans  &trans   &kp BACKSPACE   &kp DELETE          &trans            &trans               &kp PLUS   &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans
-&trans  &kp ESC  &kp LEFT_SHIFT  &kp LCTRL           &kp F2            &bt BT_SEL 4         &kp MINUS  &kp LEFT     &kp DOWN      &kp RIGHT      &trans  &trans
+&trans  &kp ESC  &kp LEFT_SHIFT  &kp LCTRL           &kp F2            &bt BT_SEL 4         &kp MINUS  &kp LEFT     &kp DOWN      &kp RIGHT      &to 0   &trans
 &trans  &trans   &kp LEFT_GUI    &kp K_CONTEXT_MENU  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans     &kp HOME     &trans        &kp END        &trans  &trans
                                  &trans              &kp LEFT_ALT      &kp SPACE            &trans     &trans       &trans
             >;
         };
 
-        raise_layer {
+        Numpad {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -79,7 +89,7 @@
             display-name = "Numpad";
             bindings = <
 &kp TAB    &trans  &trans     &trans                &trans                 &trans       &mt BACKSLASH SLASH  &mt AMPERSAND N7          &mt ASTERISK N8       &mt LEFT_PARENTHESIS N0  &kp COMMA         &kp ENTER
-&kp LCTRL  &trans  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans       &kp MINUS            &mt DOLLAR NUMBER_4       &mt PERCENT N5        &mt CARET NUMBER_6       &mt COLON PERIOD  &kp GRAVE
+&kp LCTRL  &to 0   &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans       &kp MINUS            &mt DOLLAR NUMBER_4       &mt PERCENT N5        &mt CARET NUMBER_6       &mt COLON PERIOD  &kp GRAVE
 &kp LSHFT  &trans  &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &kp PLUS             &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3        &kp PIPE          &kp RIGHT_SHIFT
                               &kp BACKSPACE         &kp SPACE              &kp SPACE    &trans               &mt RIGHT_PARENTHESIS N0  &trans
             >;
@@ -87,10 +97,10 @@
 
         Fn {
             bindings = <
-&trans  &trans   &kp F9  &kp F8  &kp F7  &kp F12    &kp C_VOL_UP       &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2     &trans        &trans
-&trans  &kp ESC  &kp F6  &kp F5  &kp F4  &kp F11    &kp C_VOLUME_DOWN  &to 0             &kp RCTRL       &kp RIGHT_SHIFT  &kp LEFT_ALT  &trans
-&trans  &trans   &kp F3  &kp F2  &kp F1  &kp F10    &kp K_MUTE         &kp K_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT       &trans        &trans
-                         &trans  &trans  &trans     &trans             &trans            &trans
+&trans  &trans   &kp F9  &kp F8   &kp F7  &kp F12    &kp C_VOL_UP       &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2  &trans
+&trans  &kp ESC  &kp F6  &kp F5   &kp F4  &kp F11    &kp C_VOLUME_DOWN  &to 0             &kp RCTRL       &kp RIGHT_SHIFT  &kp LEFT_ALT  &trans
+&trans  &trans   &kp F3  &kp F2   &kp F1  &kp F10    &kp K_MUTE         &kp K_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT       &trans        &trans
+                         &kp DEL  &trans  &trans     &trans             &to 0             &trans
             >;
         };
     };
