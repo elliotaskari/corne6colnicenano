@@ -87,9 +87,9 @@
 
         Fn {
             bindings = <
-&trans  &trans   &kp F9  &kp F8  &kp F7  &kp F12    &kp C_VOL_UP       &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2     &trans  &trans
-&trans  &kp ESC  &kp F6  &kp F5  &kp F4  &kp F11    &kp C_VOLUME_DOWN  &to 0             &kp RCTRL       &kp RIGHT_SHIFT  &trans  &trans
-&trans  &trans   &kp F3  &kp F2  &kp F1  &kp F10    &kp K_MUTE         &kp K_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT       &trans  &trans
+&trans  &trans   &kp F9  &kp F8  &kp F7  &kp F12    &kp C_VOL_UP       &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2     &trans        &trans
+&trans  &kp ESC  &kp F6  &kp F5  &kp F4  &kp F11    &kp C_VOLUME_DOWN  &to 0             &kp RCTRL       &kp RIGHT_SHIFT  &kp LEFT_ALT  &trans
+&trans  &trans   &kp F3  &kp F2  &kp F1  &kp F10    &kp K_MUTE         &kp K_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT       &trans        &trans
                          &trans  &trans  &trans     &trans             &trans            &trans
             >;
         };
