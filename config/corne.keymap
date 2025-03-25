@@ -30,6 +30,17 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp EQUAL>;
         };
+
+        HRM: HRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -64,7 +75,7 @@
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q           &kp W                 &kp E          &kp R         &kp T      &kp Y   &kp U      &kp I      &kp O    &kp P     &kp ENTER
-&sk LCTRL  &kp A           &lt 2 S               &mt LCTRL D    &lt 1 F       &kp G      &kp H   &td_j      &td_k      &kp L    &kp SEMI  &mt LC(LA(RIGHT_SHIFT)) SQT
+&sk LCTRL  &kp A           &lt 2 S               &HRM LCTRL D   &lt 1 F       &kp G      &kp H   &td_j      &td_k      &kp L    &kp SEMI  &mt LC(LA(RIGHT_SHIFT)) SQT
 &sk LSHFT  &mt LEFT_GUI Z  &mt K_CONTEXT_MENU X  &kp C          &kp V         &kp B      &kp N   &kp M      &td_comma  &kp DOT  &to 3     &sk RIGHT_SHIFT
                                                  &kp BACKSPACE  &kp LEFT_ALT  &kp RET    &tog 2  &kp SPACE  &tog 1
             >;
@@ -97,7 +108,7 @@
             bindings = <
 &kp TAB    &trans  &trans     &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &trans        &mt BACKSLASH SLASH  &mt AMPERSAND N7          &mt ASTERISK N8       &mt LEFT_PARENTHESIS N0  &mt GRAVE COMMA   &kp ENTER
 &kp LCTRL  &to 0   &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans        &kp MINUS            &mt DOLLAR NUMBER_4       &mt PERCENT N5        &mt CARET NUMBER_6       &mt COLON PERIOD  &trans
-&sk LSHFT  &trans  &trans     &trans                 &kp LEFT_GUI       &trans        &kp PLUS             &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3        &trans            &kp RIGHT_SHIFT
+&sk LSHFT  &trans  &trans     &kp EQUAL              &kp LEFT_GUI       &trans        &kp PLUS             &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3        &trans            &kp RIGHT_SHIFT
                               &kp BACKSPACE          &kp SPACE          &kp DELETE    &trans               &mt RIGHT_PARENTHESIS N0  &trans
             >;
         };
