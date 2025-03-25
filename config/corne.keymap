@@ -90,9 +90,9 @@
 
             display-name = "Nav";
             bindings = <
-&trans  &trans   &kp BACKSPACE   &kp DELETE          &trans            &trans               &kp PLUS   &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans
-&trans  &kp ESC  &kp LEFT_SHIFT  &kp LCTRL           &kp F2            &trans               &kp F2     &kp LEFT     &kp DOWN      &kp RIGHT      &to 0   &trans
-&trans  &trans   &kp LEFT_GUI    &kp K_CONTEXT_MENU  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp HOME     &trans        &kp END        &trans  &trans
+&trans  &trans   &kp BACKSPACE   &kp DELETE          &trans            &trans               &kp PLUS   &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &kp ESC  &kp LEFT_SHIFT  &kp LCTRL           &kp F2            &trans               &kp F2     &kp LEFT     &kp DOWN      &kp RIGHT      &to 0             &trans
+&trans  &trans   &kp LEFT_GUI    &kp K_CONTEXT_MENU  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp HOME     &trans        &kp END        &trans            &trans
                                  &trans              &kp LEFT_ALT      &kp SPACE            &trans     &trans       &trans
             >;
         };
