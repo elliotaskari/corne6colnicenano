@@ -106,10 +106,10 @@
 
             display-name = "Numpad";
             bindings = <
-&kp TAB    &trans  &trans     &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &trans        &HRM BACKSLASH SLASH  &HRM AMPERSAND N7          &HRM ASTERISK N8       &HRM LEFT_PARENTHESIS NUMBER_9  &HRM GRAVE COMMA   &kp ENTER
-&kp LCTRL  &to 0   &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans        &kp MINUS             &HRM DOLLAR NUMBER_4       &HRM PERCENT N5        &mt CARET NUMBER_6              &HRM COLON PERIOD  &trans
-&sk LSHFT  &trans  &trans     &kp EQUAL              &kp LEFT_GUI       &trans        &kp PLUS              &HRM EXCLAMATION NUMBER_1  &HRM AT_SIGN NUMBER_2  &HRM HASH NUMBER_3              &trans             &kp RIGHT_SHIFT
-                              &kp BACKSPACE          &kp SPACE          &kp DELETE    &trans                &mt RIGHT_PARENTHESIS N0   &trans
+&kp TAB  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &HRM BACKSLASH SLASH  &HRM AMPERSAND N7          &HRM ASTERISK N8       &HRM LEFT_PARENTHESIS NUMBER_9  &HRM GRAVE COMMA   &kp ENTER
+&trans   &to 0   &trans  &kp RCTRL             &kp LEFT_SHIFT         &trans        &kp MINUS             &HRM DOLLAR NUMBER_4       &HRM PERCENT N5        &mt CARET NUMBER_6              &HRM COLON PERIOD  &trans
+&trans   &trans  &trans  &kp EQUAL             &kp LEFT_GUI           &trans        &kp PLUS              &HRM EXCLAMATION NUMBER_1  &HRM AT_SIGN NUMBER_2  &HRM HASH NUMBER_3              &trans             &kp RIGHT_SHIFT
+                         &kp BACKSPACE         &kp SPACE              &kp DELETE    &trans                &HRM RIGHT_PARENTHESIS N0  &trans
             >;
         };
 
