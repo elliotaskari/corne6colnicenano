@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -74,10 +75,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q           &kp W                 &kp E          &kp R         &kp T      &kp Y   &kp U      &td_i         &kp O    &kp P     &kp ENTER
-&sk LCTRL  &kp A           &lt 2 S               &HRM LCTRL D   &lt 1 F       &kp G      &kp H   &td_j      &HRM RCTRL K  &kp L    &kp SEMI  &HRM LC(LA(RIGHT_SHIFT)) SQT
-&sk LSHFT  &mt LEFT_GUI Z  &mt K_CONTEXT_MENU X  &kp C          &kp V         &kp B      &kp N   &kp M      &td_comma     &kp DOT  &to 3     &sk RIGHT_SHIFT
-                                                 &kp BACKSPACE  &kp LEFT_ALT  &kp RET    &tog 2  &kp SPACE  &tog 1
+&kp TAB    &kp Q           &kp W                 &kp E          &kp R         &kp T      &kp Y    &kp U      &td_i         &kp O    &kp P     &kp ENTER
+&sk LCTRL  &kp A           &lt 2 S               &HRM LCTRL D   &lt 1 F       &kp G      &lt 4 H  &td_j      &HRM RCTRL K  &kp L    &kp SEMI  &HRM LC(LA(RIGHT_SHIFT)) SQT
+&sk LSHFT  &mt LEFT_GUI Z  &mt K_CONTEXT_MENU X  &kp C          &kp V         &kp B      &kp N    &kp M      &td_comma     &kp DOT  &to 3     &sk RIGHT_SHIFT
+                                                 &kp BACKSPACE  &kp LEFT_ALT  &kp RET    &tog 2   &kp SPACE  &tog 1
             >;
         };
 
@@ -90,10 +91,10 @@
 
             display-name = "Nav";
             bindings = <
-&trans  &trans   &kp BACKSPACE   &kp DELETE          &trans            &trans               &kp PLUS   &kp PAGE_UP  &kp UP_ARROW       &kp PAGE_DOWN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &kp ESC  &kp LEFT_SHIFT  &kp LCTRL           &kp F2            &trans               &kp F2     &kp LEFT     &kp DOWN           &kp RIGHT      &to 0             &trans
-&trans  &trans   &kp LEFT_GUI    &kp K_CONTEXT_MENU  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp HOME     &HRM DELETE RCTRL  &kp END        &trans            &trans
-                                 &trans              &kp LEFT_ALT      &kp ENTER            &trans     &kp SPACE    &trans
+&kp LG(LS(S))  &kp LS(LG(T))  &kp BACKSPACE   &kp DELETE          &trans            &trans               &kp PLUS   &kp PAGE_UP  &kp UP_ARROW       &kp PAGE_DOWN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans         &kp ESC        &kp LEFT_SHIFT  &kp LCTRL           &kp F2            &trans               &kp F2     &kp LEFT     &kp DOWN           &kp RIGHT      &to 0             &trans
+&trans         &trans         &kp LEFT_GUI    &kp K_CONTEXT_MENU  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS  &kp HOME     &HRM DELETE RCTRL  &kp END        &trans            &trans
+                                              &trans              &kp LEFT_ALT      &kp ENTER            &trans     &kp SPACE    &trans
             >;
         };
 
@@ -119,6 +120,15 @@
 &trans  &kp ESC  &kp F6  &kp F5   &kp F4        &kp F11         &kp C_VOLUME_DOWN  &to 0             &kp RCTRL       &kp RIGHT_SHIFT  &kp LEFT_ALT  &trans
 &trans  &trans   &kp F3  &kp F2   &kp F1        &kp F10         &kp K_MUTE         &kp K_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT       &trans        &trans
                          &kp DEL  &kp LEFT_ALT  &kp LEFT_GUI    &trans             &to 0             &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &mmv MOVE_UP    &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans          &trans           &trans    &trans  &trans  &trans
             >;
         };
     };
